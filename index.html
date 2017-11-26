@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>is it a number</title>
+</head>
+<body>
+
+	<p>Please enter a number. If not numeric, the browser will pop up the prompt box</p>
+
+	<input id = "demo"  type="text" >
+
+	<script type="text/javascript">
+		
+		function judge(){
+
+			var x = document.getElementById("demo").value;
+			if (x =="" || isNaN(x))
+			{
+				alert("not numeric");
+			}
+
+		}
+	</script>
+
+
+<button type = "button" onclick="judge() ">click here</button>
+</body>
+</html>
